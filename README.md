@@ -48,12 +48,4 @@ end
 ## Licensing
 GroupDocs.Editor Cloud Ruby SDK licensed under [MIT License](LICENSE).
 
-## Resources
-+ [**Website**](https://www.groupdocs.cloud)
-+ [**Product Home**](https://products.groupdocs.cloud/editor)
-+ [**Documentation**](https://docs.groupdocs.cloud/display/editorcloud/Home)
-+ [**Free Support Forum**](https://forum.groupdocs.cloud/c/editor)
-+ [**Blog**](https://blog.groupdocs.cloud/category/editor)
-
-## Contact Us
-Your feedback is very important to us. Please feel free to contact us using our [Support Forums](https://forum.groupdocs.cloud/c/editor).
+[Home](https://www.groupdocs.cloud/) | [Product Page](https://products.groupdocs.cloud/editor/ruby) | [Docs](https://docs.groupdocs.cloud/editor/) | [Demos](https://products.groupdocs.app/editor/family) | [API Reference](https://apireference.groupdocs.cloud/editor/) | [Examples](https://github.com/groupdocs-editor-cloud/groupdocs-editor-cloud-ruby-samples) | [Blog](https://blog.groupdocs.cloud/category/editor/) | [Free Support](https://forum.groupdocs.cloud/c/editor) | [Free Trial](https://purchase.groupdocs.cloud/trial)
