@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------------
 # <copyright company="Aspose Pty Ltd" file="groupdocs_editor_cloud.rb">
-#   Copyright (c) 2003-2021 Aspose Pty Ltd
+#   Copyright (c) 2003-2022 Aspose Pty Ltd
 # </copyright>
 # <summary>
 #  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -30,6 +30,7 @@ require_relative 'groupdocs_editor_cloud/version'
 require_relative 'groupdocs_editor_cloud/configuration'
 
 # Models
+require_relative 'groupdocs_editor_cloud/models/consumption_result'
 require_relative 'groupdocs_editor_cloud/models/disc_usage'
 require_relative 'groupdocs_editor_cloud/models/document_result'
 require_relative 'groupdocs_editor_cloud/models/error'
@@ -67,4 +68,5 @@ require_relative 'groupdocs_editor_cloud/api/edit_api'
 require_relative 'groupdocs_editor_cloud/api/file_api'
 require_relative 'groupdocs_editor_cloud/api/folder_api'
 require_relative 'groupdocs_editor_cloud/api/info_api'
+require_relative 'groupdocs_editor_cloud/api/license_api'
 require_relative 'groupdocs_editor_cloud/api/storage_api'

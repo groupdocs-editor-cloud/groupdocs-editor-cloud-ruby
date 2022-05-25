@@ -1,6 +1,6 @@
  #
  # --------------------------------------------------------------------------------------------------------------------
- # <copyright company="Aspose Pty Ltd" file="files_list.rb">
+ # <copyright company="Aspose Pty Ltd" file="consumption_result.rb">
  #   Copyright (c) 2003-2022 Aspose Pty Ltd
  # </copyright>
  # <summary>
@@ -28,23 +28,28 @@
 require 'date'
 
 module GroupDocsEditorCloud
-  # Files list
-  class FilesList
+  # Metered license consumption information
+  class ConsumptionResult
 
-    # Files and folders contained by folder StorageFile.
-    attr_accessor :value
+    # Amount of used credits
+    attr_accessor :credit
+
+    # Amount of MBs processed
+    attr_accessor :quantity
 
     # Attribute mapping from ruby-style variable name to JSON key.
     def self.attribute_map
       {
-        :'value' => :'Value'
+        :'credit' => :'Credit',
+        :'quantity' => :'Quantity'
       }
     end
 
     # Attribute type mapping.
     def self.swagger_types
       {
-        :'value' => :'Array<StorageFile>'
+        :'credit' => :'Float',
+        :'quantity' => :'Float'
       }
     end
 
@@ -56,10 +61,12 @@ module GroupDocsEditorCloud
       # convert string to symbol for hash key
       attributes = attributes.each_with_object({}) { |(k, v), h| h[k.to_sym] = v }
 
-      if attributes.key?(:'Value')
-        if (value = attributes[:'Value']).is_a?(Array)
-          self.value = value
-        end
+      if attributes.key?(:'Credit')
+        self.credit = attributes[:'Credit']
+      end
+
+      if attributes.key?(:'Quantity')
+        self.quantity = attributes[:'Quantity']
       end
 
     end
@@ -68,12 +75,22 @@ module GroupDocsEditorCloud
     # @return Array for valid properies with the reasons
     def list_invalid_properties
       invalid_properties = []
+      if @credit.nil?
+        invalid_properties.push("invalid value for 'credit', credit cannot be nil.")
+      end
+
+      if @quantity.nil?
+        invalid_properties.push("invalid value for 'quantity', quantity cannot be nil.")
+      end
+
       return invalid_properties
     end
 
     # Check to see if the all the properties in the model are valid
     # @return true if the model is valid
     def valid?
+      return false if @credit.nil?
+      return false if @quantity.nil?
       return true
     end
 
@@ -82,7 +99,8 @@ module GroupDocsEditorCloud
     def ==(other)
       return true if self.equal?(other)
       self.class == other.class &&
-          value == other.value
+          credit == other.credit &&
+          quantity == other.quantity
     end
 
     # @see the `==` method
@@ -94,7 +112,7 @@ module GroupDocsEditorCloud
     # Calculates hash code according to all attributes.
     # @return [Fixnum] Hash code
     def hash
-      [value].hash
+      [credit, quantity].hash
     end
 
     # Downcases first letter.
