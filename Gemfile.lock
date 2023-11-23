@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    groupdocs_editor_cloud (23.5)
+    groupdocs_editor_cloud (23.11)
       addressable (~> 2.8.4, >= 2.8.4)
       faraday (~> 0.14.0)
 

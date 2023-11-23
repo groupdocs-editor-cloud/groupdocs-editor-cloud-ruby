@@ -39,7 +39,7 @@ module GroupDocsEditorCloud
       file = TestFile.not_exist;
       request = GetInfoRequest.new(file.file_info)    
 
-      error = assert_raises ApiError do
+      error = assert_raises ApiClientError do
         @info_api.get_info(request)
       end
 

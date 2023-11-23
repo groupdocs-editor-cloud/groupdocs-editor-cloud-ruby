@@ -18,7 +18,7 @@ gem install groupdocs_editor_cloud
 To add dependency to your app copy following into your Gemfile and run `bundle install`:
 
 ```
-gem "groupdocs_editor_cloud", "~> 23.5"
+gem "groupdocs_editor_cloud", "~> 23.11"
 ```
 
 ## Getting Started

@@ -25,7 +25,7 @@
 
 # Common files
 require_relative 'groupdocs_editor_cloud/api_client'
-require_relative 'groupdocs_editor_cloud/api_error'
+require_relative 'groupdocs_editor_cloud/api_client_error'
 require_relative 'groupdocs_editor_cloud/version'
 require_relative 'groupdocs_editor_cloud/configuration'
 
